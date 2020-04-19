@@ -1,5 +1,6 @@
 ﻿using Abp.Modules;
 using Abp.Reflection.Extensions;
+using Abp.Resources.Embedded;
 using System.Reflection;
 
 namespace MyCompany.MyProject.Plugin.Startup

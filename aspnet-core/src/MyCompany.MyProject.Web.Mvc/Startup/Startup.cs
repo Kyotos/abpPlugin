@@ -68,6 +68,8 @@ namespace MyCompany.MyProject.Web.Startup
                         f => f.UseAbpLog4Net().WithConfig("log4net.config"));
 
                     options.PlugInSources.AddFolder(Path.Combine(Directory.GetParent(_hostingEnvironment.ContentRootPath).Parent.FullName, "Plugins\\Test\\MyCompany.MyProject.Plugin\\bin\\Debug\\netcoreapp3.1"), SearchOption.TopDirectoryOnly);
+                    options.PlugInSources.AddFolder(Path.Combine(Directory.GetParent(_hostingEnvironment.ContentRootPath).Parent.FullName, "Plugins\\Test\\MyCompany.MyProject.Plugin2\\bin\\Debug\\netcoreapp3.1"), SearchOption.TopDirectoryOnly);
+
                     //options.PlugInSources.AddFolder(Path.Combine(_hostingEnvironment.WebRootPath, "Plugins"), SearchOption.AllDirectories);
                 }
             );
